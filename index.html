@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" http-equiv="expires" content="0">
+    <script>
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth / 750;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi, minimal-ui">');
+        }
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54500344-21', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <title>NIKE 你 不信极限</title>
+    <link rel="stylesheet" media="screen" href="./css/style.css">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+    <section class="p-index">
+        <section class="m-abs pagealert hide">
+            <div class="m-abs pagealertd">
+                <div class="m-abs pagealerttext">确定重新制作吗？</div>
+                <div class="m-abs pagecha">
+                    <img class="m-abs lazy-bk" data-bk="img/cha.png?v=1471428298" />
+                </div>
+                <div class="m-abs pagegou">
+                    <img class="m-abs lazy-bk" data-bk="img/gou.png?v=1471428298" />
+                </div>
+            </div>
+        </section>
+        <section class="m-abs pagealertother hide">
+            <div class="m-abs pagealertd">
+                <div class="m-abs pagealerttext"></div>
+                <div class="m-abs pagegou">
+                    <img class="m-abs lazy-bk" data-bk="img/gou.png?v=1471428298" />
+                </div>
+            </div>
+        </section>
+        <section class="pageLoading">
+            <div class="m-abs pageloadingd">
+                <!--<img class="m-abs lazy-bk tn" data-bk="img/t.png?v=1471428298" />-->
+                <div class="m-abs tn">100%</div>
+                <div class="m-abs text">
+                    &nbsp;正在告别重重阻碍，请稍等。
+                </div>
+            </div>
+            <div class="m-abs loadingbar">
+                <img class="m-abs" src="img/loadingbar.jpg?v=1471428298" />
+            </div>
+        </section>
+         <section class="afterpageLoading">
+          <canvas id="afterloadingcanvas" width="750" height="1333"></canvas>
+        </section>
+        <section class="m-page m-page-step0 hide">
+            <div class="m-abs img1" style="display: none;">
+                <img class="m-abs lazy-bk" data-bk="img/swoosh.png?v=1471428298" />
+            </div>
+            <div class="m-abs zoomh_m" style="width: 100%; height: 400px; z-index: 999;">
+                <img class="m-abs lazy-bk tn" data-bk="img/t.png?v=1471428298" />
+                <div class="m-abs text">
+                    竭力追寻的，不是极限，<br />
+                    而是无限。
+                </div>
+                <div class="m-abs btlink">
+                    观看视频
+                </div>
+            </div>
+            <div class="m-abs bottond">
+                <img class="m-abs lazy-bk img2 hot_imgloop" data-bk="img/glow.png?v=1471428298" />
+                <div class="m-abs button"><div class="spanscanel">来挑战吧</div></div>
+            </div>
+            <img class="lazy-bk" data-bk="img/bg.jpg?v=1471428298" />
+        </section>
+        <section class="m-page m-page-step2 hide">
+            <div class="m-abs img1">
+                <img class="m-abs lazy-bk" data-bk="img/swoosh.png?v=1471428298" />
+            </div>
+            <div class="m-abs userinfolabel1">
+                <div class="m-abs text1">嘿！</div>
+                <div class="m-abs saydiv">
+                    <input id="sayinput" onclick="funtextinputclick()" class="m-abs" type="text" placeholder="填上你的大名" value="" />
+                </div>
+                <div class="m-abs label1">
+                    0 / 7
+                </div>
+            </div>
+            <div class="m-abs userinfolabel2">
+                <div class="m-abs btnleft">
+                    <img class="m-abs lazy-bk" data-bk="img/left-arrow.png?v=1471428298" />
+                </div>
+                <div class="m-abs btnright">
+                    <img class="m-abs lazy-bk" data-bk="img/right-arrow.png?v=1471428298" />
+                </div>
+                <div class="m-abs text1">是什么阻碍你突破极限？</div>
+                <div class="m-abs saytextarea">
+                    <textarea id="saytextarea" onclick="funtextareaclick()" readonly="readonly" class="m-abs" placeholder=""></textarea>
+                </div>
+                <div class="m-abs saydiv1">
+                </div>
+                <div class="m-abs saydiv2">
+                </div>
+                <div class="m-abs saydiv3">
+                    点击编辑或者左右选择
+                </div>
+                <div class="m-abs label111">
+                    请填写6-12个字
+                </div>
+                <div class="m-abs label1">
+                    0 / 12
+                </div>
+            </div>
+
+            <div class="m-abs bottond">
+                <div class="m-abs tapd">
+                    <img class="m-abs lazy-bk img3" data-bk="img/webwxgetmsgimg.jpg?v=1471428298" />
+                    <div class="m-abs taplabel"><div class="spanscanel">点击开始编写</div></div>
+                </div>
+                <img class="m-abs lazy-bk img2 hot_imgloop" data-bk="img/glow.png?v=1471428298" />
+                <div class="m-abs button">&nbsp;<div class="m-abs spanscanel1">来这里告别它</div></div>
+                <div class="m-abs bottommask100" style="display: none;">
+                    <div class="m-abs btnshare102" id="btnshare102">
+                        <img class="m-abs lazy-bk" data-bk="img/link.png?v=1471428298" /><div class="spanscanel">链接</div>
+                    </div>
+                    <div class="m-abs btnshare103" id="btnshare103">
+                        <img class="m-abs lazy-bk" data-bk="img/wechat.png?v=1471428298" /><div class="spanscanel">微信</div>
+                    </div>
+                    <div class="m-abs btnshare104" id="btnshare104">
+                        <img class="m-abs lazy-bk" data-bk="img/weibo.png?v=1471428298" /><div class="spanscanel">微博</div>
+                    </div>
+                </div>
+                <div class="m-abs bottommask200" style="display: none;">
+                    <div class="m-abs btnlinki200" id="btnlinki200">
+                        <img class="m-abs lazy-bk" data-bk="img/link.png?v=1471428298" /><div class="spanscanel">链接</div>
+                    </div>
+                    <div class="m-abs btncopytext200">
+                        <div class="m-abs inputcopytext200"></div>
+                        <div class="m-abs inputcopylabel200"><div class="spanscanel">长按以上链接复制并分享</div></div>
+                    </div>
+                    <div class="m-abs btncopeclose200" id="btncopeclose200">
+                        <img class="m-abs lazy-bk" data-bk="img/btncopyclose.png?v=1471428298" />
+                    </div>
+                </div>
+                <div class="m-abs bottommask300" style="display: none;">
+                    <div class="m-abs btnwechattext300" id="btnwechattext300">
+                        <div class="spanscanel">点击右上角 ••• 分享给好友</div>
+                    </div>
+                    <div class="m-abs btnwechatclose300" id="btnwechatclose300">
+                        <img class="m-abs lazy-bk" data-bk="img/btncopyclose.png?v=1471428298" />
+                    </div>
+                </div>
+            </div>
+            <img class="lazy-bk" data-bk="img/bg.jpg?v=1471428298" />
+        </section>
+        <section class="m-page m-page-step3 hide">
+            <div class="m-abs img1">
+                <img class="m-abs lazy-bk" data-bk="img/swoosh.png?v=1471428298" />
+            </div>
+
+            <div class="m-abs gamelabel">
+            </div>
+            <div class="m-abs bottomcategory" id="bottomcategory">
+                <div class="m-abs catetitle1">跑步</div>
+                <div class="m-abs catetitle2">篮球</div>
+                <div class="m-abs catetitle3">足球</div>
+                <div class="m-re categorymenus ct111" cateid="1" pid="1" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/111.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus ct121" cateid="1" pid="2" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/121.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus ct131" cateid="1" pid="3" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/131.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus ct141" cateid="1" pid="4" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/141.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus ct151" cateid="1" pid="5" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/151.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus ct211" cateid="2" pid="1" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/211.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus ct221" cateid="2" pid="2" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/221.jpg?v=1471428298" />
+                </div>
+                 <div class="m-re categorymenus ct231" cateid="2" pid="3" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/231.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus  ct311" cateid="3" pid="1" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/311.jpg?v=1471428298" />
+                </div>
+                <div class="m-re categorymenus  ct321" cateid="3" pid="2" ishave="1">
+                    <img class="m-abs lazy-bk nowlockimgshow" data-bk="img/thumb/321.jpg?v=1471428298" />
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="m-abs bottommask">
+                <div class="m-abs bmask1" id="bmask1">
+                    <img class="m-abs lazy-bk" data-bk="img/left-arrow.png?v=1471428298" /><div class="spanscanel">返回</div>
+                </div>
+                <div class="m-abs bmask2" id="bmask2">
+                    <img class="m-abs lazy-bk" data-bk="img/random.png?v=1471428298" /><div class="spanscanel">随机</div>
+                </div>
+                <div class="m-abs bmask3" id="bmask3" op="1">
+                    <img class="m-abs lazy-bk" data-bk="img/xiaoguo1.png?v=1471428298" /><div class="spanscanel">效果</div>
+                </div>
+                <div class="m-abs bmask4" id="bmask4">
+                    <img class="m-abs lazy-bk" data-bk="img/confirm.png?v=1471428298" /><div class="spanscanel">确认</div>
+                </div>
+            </div>
+            <div class="m-abs bottommask2" style="display: none;">
+                <div class="m-abs btnresult1" id="btnresult1">
+                    <img class="m-abs lazy-bk" data-bk="img/btnplayagain.png?v=1471428298" /><div class="spanscanel">重新制作</div>
+                </div>
+                <div class="m-abs btnresult2" id="btnresult2">
+                    <img class="m-abs lazy-bk" data-bk="img/btnshareicon.png?v=1471428298" /><div class="spanscanel">分享体验</div>
+                </div>
+                <!-- <div class="m-abs btnresult3" id="btnresult3">
+                    <img class="m-abs lazy-bk" data-bk="img/btnperson.png?v=1471428298" />挑战好友
+                </div>-->
+            </div>
+            <div class="m-abs bottommask6" style="display: none;">
+                <div class="m-abs btnfresult1" id="btnfresult1">
+                   <div class="spanscanel"> &nbsp;我要制作</div>
+                </div>
+            </div>
+            <div class="m-abs bottommask3" style="display: none;">
+                <div class="m-abs btnshare1" id="btnshare1">
+                    <img class="m-abs lazy-bk" data-bk="img/left-arrow.png?v=1471428298" /><div class="spanscanel">返回</div>
+                </div>
+                <div class="m-abs btnshare2" id="btnshare2">
+                    <img class="m-abs lazy-bk" data-bk="img/link.png?v=1471428298" /><div class="spanscanel">链接</div>
+                </div>
+                <div class="m-abs btnshare3" id="btnshare3">
+                    <img class="m-abs lazy-bk" data-bk="img/wechat.png?v=1471428298" /><div class="spanscanel">微信</div>
+                </div>
+                <div class="m-abs btnshare4" id="btnshare4">
+                    <img class="m-abs lazy-bk" data-bk="img/weibo.png?v=1471428298" /><div class="spanscanel">微博</div>
+                </div>
+            </div>
+            <div class="m-abs bottommask4" style="display: none;">
+                <div class="m-abs btnlinki" id="btnlinki">
+                    <img class="m-abs lazy-bk" data-bk="img/link.png?v=1471428298" /><div class="spanscanel">链接</div>
+                </div>
+                <div class="m-abs btncopytext">
+                    <div class="m-abs inputcopytext"></div>
+                    <div class="m-abs inputcopylabel">长按以上链接复制并分享</div>
+                </div>
+                <div class="m-abs btncopeclose" id="btncopeclose">
+                    <img class="m-abs lazy-bk" data-bk="img/btncopyclose.png?v=1471428298" />
+                </div>
+            </div>
+            <div class="m-abs bottommask5" style="display: none;">
+                <div class="m-abs btnwechattext" id="btnwechattext">
+                    点击右上角 ••• 分享给好友
+                </div>
+                <div class="m-abs btnwechatclose" id="btnwechatclose">
+                    <img class="m-abs lazy-bk" data-bk="img/btncopyclose.png?v=1471428298" />
+                </div>
+            </div>
+        </section>
+        <section class="m-page m-page-result hide">
+            <div class="m-abs img1">
+                <img class="m-abs lazy-bk" data-bk="img/swoosh.png?v=1471428298" />
+            </div>
+            <div class="m-abs btnreplay">
+                <img class="m-abs lazy-bk" data-bk="img/replayicon.png?v=1471428298" />
+                <div class="m-abs replaytext">重新播放</div>
+            </div>
+            <div class="m-abs resultlabel">
+                <div class="m-abs resultlabels">
+                    <div class="m-abs textlabel2">不信极限</div>
+                </div>
+                <div class="m-abs resultlabels2">
+                    <img class="m-abs lazy-bk" data-bk="img/t.jpg?v=1471428298" />
+                </div>
+                <div class="m-abs resultlabels3">
+                    <img class="m-abs lazy-bk  resimg1" data-bk="img/logo1.jpg?v=1471428298" />
+                    <img class="m-abs lazy-bk  resimg2 hide" data-bk="img/logo2.jpg?v=1471428298" />
+                    <img class="m-abs lazy-bk  resimg3 hide" data-bk="img/logo3.jpg?v=1471428298" />
+                    <img class="m-abs lazy-bk  resimg4 hide" data-bk="img/logo4.jpg?v=1471428298" />
+                    <img class="m-abs lazy-bk  resimg5 hide" data-bk="img/logo5.jpg?v=1471428298" />
+                </div>
+            </div>
+            <div class="m-abs bottommask2" style="display: none;">
+                <div class="m-abs btnresult1" id="btnresult1">
+                    <img class="m-abs lazy-bk" data-bk="img/btnplayagain.png?v=1471428298" /><div class="spanscanel">重新制作</div>
+                </div>
+                <div class="m-abs btnresult2" id="btnresult2">
+                    <img class="m-abs lazy-bk" data-bk="img/btnshareicon.png?v=1471428298" /><div class="spanscanel">分享体验</div>
+                </div>
+                <!-- <div class="m-abs btnresult3" id="btnresult3">
+                    <img class="m-abs lazy-bk" data-bk="img/btnperson.png?v=1471428298" />挑战好友
+                </div>-->
+            </div>
+            <div class="m-abs bottommask3" style="display: none;">
+                <div class="m-abs btnshare1" id="btnshare1">
+                    <img class="m-abs lazy-bk" data-bk="img/left-arrow.png?v=1471428298" /><div class="spanscanel">返回</div>
+                </div>
+                <div class="m-abs btnshare2" id="btnshare2">
+                    <img class="m-abs lazy-bk" data-bk="img/link.png?v=1471428298" /><div class="spanscanel">链接</div>
+                </div>
+                <div class="m-abs btnshare3" id="btnshare3">
+                    <img class="m-abs lazy-bk" data-bk="img/wechat.png?v=1471428298" /><div class="spanscanel">微信</div>
+                </div>
+                <div class="m-abs btnshare4" id="btnshare4">
+                    <img class="m-abs lazy-bk" data-bk="img/weibo.png?v=1471428298" /><div class="spanscanel">微博</div>
+                </div>
+            </div>
+            <div class="m-abs bottommask4" style="display: none;">
+                <div class="m-abs btnlinki" id="btnlinki">
+                    <img class="m-abs lazy-bk" data-bk="img/link.png?v=1471428298" /><div class="spanscanel">链接</div>
+                </div>
+                <div class="m-abs btncopytext">
+                    <!--<input class="m-abs inputcopytext" type="text" value="" />-->
+                    <div class="m-abs inputcopytext"></div>
+                    <div class="m-abs inputcopylabel">长按以上链接复制并分享</div>
+                </div>
+                <div class="m-abs btncopeclose" id="btncopeclose">
+                    <img class="m-abs lazy-bk" data-bk="img/btncopyclose.png?v=1471428298" />
+                </div>
+            </div>
+            <div class="m-abs bottommask5" style="display: none;">
+                <div class="m-abs btnwechattext" id="btnwechattext">
+                    点击右上角 ••• 分享给好友
+                </div>
+                <div class="m-abs btnwechatclose" id="btnwechatclose">
+                    <img class="m-abs lazy-bk" data-bk="img/btncopyclose.png?v=1471428298" />
+                </div>
+            </div>
+            <div class="m-abs bottommask6" style="display: none;">
+                <div class="m-abs btnfresult1" id="btnfresult1">
+                    &nbsp;我要制作
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="screentip hmiddle hide">
+        <div class="subwrap">
+            <div class="content">
+            </div>
+        </div>
+    </div>
+    <script src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,7358 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+@font-face {
+    font-family: "TradeGothicW01-BoldCn20_675334";
+    src: url("./../fonts/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff");
+}
+
+@font-face {
+    font-family: "MStiffHeiPRCBold";
+    src: url("./../fonts/195b06ba-4f90-4aad-9590-4079e8c3be61.woff") format("woff");
+}
+/*网页样式重置reset*/
+html {
+    font-size: 20px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    width: 100%;
+    height: 100%;
+    min-height: 1100px;
+    overflow: hidden;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+}
+
+label {
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+input, button, select, textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, menu, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption {
+    display: block;
+}
+/*html5设置*/
+
+h1, h2, h3, h4, h5, h6, th, td, table, input, button, select, textarea, sub {
+    font-size: 1em;
+}
+
+body, input, button, select, textarea, sub {
+}
+
+em, cite, address, optgroup {
+    font-style: normal;
+}
+
+kbd, samp, code {
+}
+
+img, input, button, select, textarea {
+    vertical-align: middle;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+abbr, acronym {
+    cursor: help;
+    border-bottom: 1px dotted black;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 0;
+}
+
+    table th, table td {
+        border: 0;
+    }
+
+legend, hr {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+legend, hr, caption {
+    visibility: hidden;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*统一样式*/
+html {
+    width: 750px;
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    width: 750px;
+    height: 100%;
+    min-height: 1100px;
+    overflow: hidden;
+}
+
+/*统一功能元件样式 f-*/
+.f-fl {
+    float: left;
+}
+
+.f-fr {
+    float: right;
+}
+
+.f-imgW01 {
+    max-width: 750px;
+}
+
+.f-imgW02 {
+    max-width: 320px;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/*index*/
+.p-index {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portrait .p-index {
+    -webkit-transform: scale(0.4);
+    margin-top: -44%;
+}
+
+/*模块 m-*/
+.m-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    -ms-transform-origin: center;
+    z-index: 999;
+}
+
+    .m-page.show {
+        z-index: 10;
+        display: block;
+    }
+
+    .m-page.hide {
+        z-index: 5;
+        display: none;
+    }
+
+    .m-page.active {
+        z-index: 15;
+        display: block;
+    }
+
+.m-img {
+    width: 100%;
+    height: 100%;
+}
+
+.m-abs {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.m-re {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.m-full {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.zoomh, .zoom {
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+}
+
+.zoomh_t, .zoom_t {
+    transform-origin: center 0;
+    -webkit-transform-origin: center 0;
+    -moz-transform-origin: center 0;
+    -o-transform-origin: center 0;
+    -ms-transform-origin: center 0;
+}
+
+.zoomh_m {
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+}
+
+.zoom_m, zoom_btn {
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+}
+
+.zoomh_b, .zoom_b {
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+}
+
+.screentip {
+    position: fixed;
+    z-index: 999999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFF;
+    background: rgb(241,241,241);
+    background-size: 100% 100%;
+}
+
+    .screentip .content {
+        background: url(./../img/screen.png) no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+.hmiddle {
+    display: table;
+    vertical-align: middle;
+    _position: absolute;
+    overflow: hidden;
+}
+
+.subwrap {
+    vertical-align: middle;
+    display: table-cell;
+    _position: absolute;
+    _top: 50%;
+}
+
+.content {
+    _position: relative;
+    _top: -50%;
+}
+
+/* pageLoading */
+.pageLoading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    height: 100%;
+    width: 100%;
+    background: #d4d4d4;
+}
+
+/*.pageLoadingd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 350px;
+    width: 525px;
+    margin: -175px 0 0 -262px;
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 350px;
+    text-align: center;
+    letter-spacing: 8px;
+}*/
+
+
+div.hide, img.hide, section.hide {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mask {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    opacity: 1;
+}
+
+.m-page-step0 .img1 {
+    top: 40px;
+    left: 300px;
+    z-index: 99;
+    width: 150px;
+}
+
+.m-page-step0 .tn {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.m-page-step0 .text {
+    width: 65%;
+    height: 100px;
+    left: 20%;
+    letter-spacing: 14px;
+    bottom: -550px;
+    line-height: 40px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 25px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step0 .btlink {
+    line-height: 50px;
+    left: 301px;
+    letter-spacing: 4px;
+    bottom: -620px;
+    text-align: center;
+    color: rgb(255,6,129);
+    border-bottom: 1px solid #000000;
+    width: 148px;
+    font-size: 30px;
+    z-index: 9999;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step0 .bottond {
+    width: 100%;
+    height: 280px;
+    bottom: 0px;
+    z-index: 99;
+}
+
+    .m-page-step0 .bottond .img2 {
+        width: 120%;
+        top: -40px;
+        left: -10%;
+    }
+
+    .m-page-step0 .bottond .button {
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        letter-spacing: 8px;
+        background: #FFFFFF;
+        bottom: 0px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+.spanscanel {
+    letter-spacing: 14px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.spanscanel1 {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step1 .img1 {
+    top: 40px;
+    left: 300px;
+    z-index: 99;
+    width: 150px;
+}
+
+.m-page-step1 .userinfolabel {
+    width: 100%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -375px;
+}
+
+.m-page-step1 .text1 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.m-page-step1 #sayinput {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    border: 0;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.m-page-step1 .saydiv {
+    width: 80%;
+    height: 60px;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 4px;
+    top: 80px;
+    left: 10%;
+    background: rgba(0,0,0,0);
+    border: 0;
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+.m-page-step1 .label1 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    top: 150px;
+}
+
+.m-page-step1 .bottond {
+    width: 100%;
+    height: 280px;
+    bottom: 0px;
+    z-index: 99;
+}
+
+    .m-page-step1 .bottond .img2 {
+        width: 100%;
+    }
+
+    .m-page-step1 .bottond .button {
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        letter-spacing: 8px;
+        background: #FFFFFF;
+        bottom: 0px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+
+
+.m-page-step2 .img1 {
+    top: 40px;
+    left: 300px;
+    z-index: 99;
+    width: 150px;
+}
+
+    .m-page-step0 .img1 img, .m-page-step1 .img1 img, .m-page-step2 .img1 img, .m-page-step3 .img1 img {
+        width: 100%;
+    }
+
+.m-page-step2 .userinfolabel1 {
+    width: 80%;
+    left: 10%;
+    height: 200px;
+    top: 200px;
+}
+
+.m-page-step2 .userinfolabel2 {
+    width: 80%;
+    height: 250px;
+    left: 10%;
+    top: 450px;
+}
+
+.m-page-step2 .saytextarea {
+    width: 56%;
+    height: 180px;
+    top: 100px;
+    background: rgba(0,0,0,0);
+    font-size: 35px;
+    left: 22%;
+}
+
+.m-page-step2 #saytextarea {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: rgba(0,0,0,0);
+    line-height: 95px;
+    text-align: center;
+    font-size: 45px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    letter-spacing: 4px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step2 .userinfolabel1 .text1 {
+    width: 60%;
+    left: 8%;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    letter-spacing: 4px;
+    top: 90px;
+    font-size: 45px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step2 #sayinput {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 45px;
+    text-align: center;
+    background: rgba(0,0,0,0);
+    border: 0;
+    -webkit-user-modify: read-write-plaintext-only;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step2 .saydiv {
+    width: 70%;
+    height: 80px;
+    font-size: 35px;
+    text-align: left;
+    letter-spacing: 4px;
+    top: 70px;
+    left: 15%;
+    background: rgba(0,0,0,0);
+    border: 0;
+    border-bottom: 1px solid rgb(189,189,189);
+}
+
+.m-page-step2 .userinfolabel1 .label1 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: 155px;
+    color: rgb(179,179,179);
+    display: none;
+}
+
+.m-page-step2 .userinfolabel2 .text1 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 4px;
+    top: 10px;
+    font-size: 45px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.inputcopylabel {
+    top: 70px;
+    width: 90%;
+    text-align: center;
+}
+
+.inputcopytext {
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+.m-page-step2 #text1 {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    border: 0;
+}
+
+.m-page-step2 .saydiv1 {
+    width: 70%;
+    height: 0px;
+    border: 1px solid rgb(189,189,189);
+    top: 190px;
+    left: 15%;
+    display: none;
+}
+
+
+.m-page-step2 #text2 {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    border: 0;
+}
+
+.m-page-step2 .saydiv2 {
+    width: 70%;
+    height: 0px;
+    border: 1px solid rgb(189,189,189);
+    top: 283px;
+    left: 15%;
+    display: none;
+}
+
+.m-page-step2 #text3 {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    border: 0;
+}
+
+.m-page-step2 .saydiv3 {
+    width: 100%;
+    height: 50px;
+    top: 290px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 50px;
+    font-size: 20px;
+    color: rgb(179,179,179);
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step2 .bottond {
+    width: 100%;
+    height: 280px;
+    bottom: 0px;
+    z-index: 99;
+}
+
+    .m-page-step2 .bottond .img2 {
+        width: 120%;
+        top: -40px;
+        left: -10%;
+    }
+
+    .m-page-step2 .bottond .button {
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        letter-spacing: 8px;
+        background: #FFFFFF;
+        bottom: 0px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+.m-page-step2 .userinfolabel2 .label1 {
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    top: 290px;
+    left: 15%;
+    text-align: right;
+    color: rgb(179,179,179);
+    display: none;
+}
+
+.m-page-step2 .userinfolabel2 .label111 {
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    top: 290px;
+    left: 15%;
+    text-align: center;
+    color: rgb(179,179,179);
+    display: none;
+    letter-spacing: 4px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.m-page-step2 .tapd {
+    width: 100%;
+    height: 110px;
+    top: -20px;
+    z-index: 99999;
+}
+
+    .m-page-step2 .tapd .img3 {
+        left: 340px;
+    }
+
+    .m-page-step2 .tapd .taplabel {
+        width: 100%;
+        bottom: 0px;
+        text-align: center;
+        letter-spacing: 4px;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+.abss {
+    position: absolute;
+}
+
+.resultlabels2, .resultlabels3 {
+    width: 750px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    margin: -375px 0 0 -375px;
+    display: none;
+}
+
+.m-page-step2 .userinfolabel2 .btnleft {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 50px;
+    text-align: center;
+    top: 116px;
+    left: -60px;
+}
+
+    .m-page-step2 .userinfolabel2 .btnleft img {
+        top: 60px;
+    }
+
+.m-page-step2 .userinfolabel2 .btnright {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 50px;
+    text-align: center;
+    top: 116px;
+    right: -60px;
+}
+
+    .m-page-step2 .userinfolabel2 .btnright img {
+        top: 60px;
+    }
+
+.m-page-step3 .gamelabel {
+    width: 100%;
+    height: 100%;
+}
+
+.m-page-step3 .category {
+    width: 100%;
+    height: 100%;
+}
+
+.m-page-step3 .animation {
+    width: 100%;
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+}
+
+.bottomcategory {
+    width: 160%;
+    height: 100px;
+    font-size: 30px;
+    bottom: 165px;
+    left: 0px;
+    z-index: 9999999;
+}
+
+    .bottomcategory .catetitle1 {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 14px;
+        color: #FFFFFF;
+        top: -50px;
+        left: 5px;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+    .bottomcategory .catetitle2 {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 14px;
+        color: #FFFFFF;
+        top: -50px;
+        left: 605px;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+    .bottomcategory .catetitle3 {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 14px;
+        color: #FFFFFF;
+        top: -50px;
+        left: 967px;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+.m-page-step3 .bottommask {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+}
+
+.bottomcategory .categorymenus {
+    width: 100px;
+    height: 100px;
+    background: url(./../img/borderbg.png);
+    float: left;
+    margin-left: 20px;
+}
+
+.lockimgshow {
+    position: absolute;
+    left: 36px;
+    top: 34px;
+}
+
+.nowlockimgshow {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+}
+
+.categoryselected {
+    border-bottom: 10px solid rgb(255,10,129);
+}
+
+.lockimghide {
+    position: absolute;
+    left: 36px;
+    top: 34px;
+    display: none;
+}
+/*.bottomcategory .categorymenu2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bolder;
+    background: #FFFFFF;
+}
+
+.bottomcategory .categorymenu3 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bolder;
+    background: #FFFFFF;
+}
+
+.bottomcategory .categorymenu4 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bolder;
+    background: #FFFFFF;
+}
+
+.bottomcategory .categorymenu5 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bolder;
+    background: #FFFFFF;
+}*/
+
+/*.bottommask .bmask1 {
+    width: 130px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 4px;
+    left: 55px;
+    top: 25px;
+}
+
+.bottommask .bmask2 {
+    width: 120px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 205px;
+    top: 25px;
+}
+
+.bottommask .bmask3 {
+    width: 120px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 385px;
+    top: 25px;
+}
+
+.bottommask .bmask4 {
+    width: 115px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 565px;
+    top: 25px;
+}
+
+.bottommask .bmask1 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.bottommask .bmask2 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.bottommask .bmask3 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 35px;
+}
+
+.bottommask .bmask4 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}*/
+
+
+.bottommask .bmask1 {
+    width: 135px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 4px;
+    left: 90px;
+    top: 25px;
+}
+
+.bottommask .bmask2 {
+    width: 135px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 205px;
+    top: 25px;
+    display: none;
+}
+
+.bottommask .bmask3 {
+    width: 135px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 306px;
+    top: 25px;
+}
+
+.bottommask .bmask4 {
+    width: 135px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 544px;
+    top: 25px;
+}
+
+.bottommask .bmask1 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.bottommask .bmask2 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.bottommask .bmask3 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 35px;
+    color: rgb(255,10,129);
+}
+
+.bottommask .bmask4 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.bottomshake {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    bottom: 10px;
+    letter-spacing: 8px;
+}
+
+.m-page-step3 .img1 {
+    top: 40px;
+    left: 300px;
+    z-index: 99;
+    width: 150px;
+}
+
+.categorymenuselected {
+    color: rgb(255,59,135);
+}
+
+
+.m-page-result .img1 {
+    top: 40px;
+    left: 300px;
+    z-index: 99;
+    width: 150px;
+}
+
+    .m-page-result .img1 img {
+        width: 100%;
+    }
+
+.m-page-result .resultlabel {
+    width: 100%;
+    background: #000000;
+}
+
+.bottommask2 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+}
+
+    /*.bottommask2 .btnresult1 {
+        width: 190px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 50px;
+        top: 25px;
+        line-height: 117px;
+    }
+
+    .bottommask2 .btnresult2 {
+        width: 190px;
+        height: 100px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 280px;
+        top: 25px;
+        line-height: 114px;
+    }*/
+    .bottommask2 .btnresult1 {
+        width: 220px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 130px;
+        top: 25px;
+        line-height: 100px;
+        height: 100px;
+    }
+
+    .bottommask2 .btnresult2 {
+        width: 220px;
+        height: 100px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 435px;
+        top: 25px;
+        line-height: 100px;
+    }
+
+    .bottommask2 .btnresult3 {
+        width: 180px;
+        height: 100px;
+        line-height: 112px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 515px;
+        top: 25px;
+        display: none;
+    }
+
+    .bottommask2 .btnresult1 img {
+        position: absolute;
+        top: 28px;
+        left: 0px;
+        width: 38px;
+    }
+
+    .bottommask2 .btnresult2 img {
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        width: 38px;
+    }
+
+    .bottommask2 .btnresult3 img {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 38px;
+    }
+
+
+
+
+/*.m-page-share .img1 {
+    top: 40px;
+    left: 281.5px;
+    z-index: 99;
+}
+
+.m-page-share .sharelabel {
+    width: 100%;
+    background: #000000;
+}
+*/
+.bottommask3 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+}
+
+    .bottommask3 .btnshare1 {
+        width: 135px;
+        height: 100px;
+        line-height: 105px;
+        text-align: center;
+        letter-spacing: 4px;
+        left: 55px;
+        top: 25px;
+    }
+
+    .bottommask3 .btnshare2 {
+        width: 135px;
+        height: 100px;
+        line-height: 100px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 210px;
+        top: 25px;
+    }
+
+    .bottommask3 .btnshare3 {
+        width: 135px;
+        height: 100px;
+        line-height: 100px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 390px;
+        top: 25px;
+    }
+
+    .bottommask3 .btnshare4 {
+        width: 135px;
+        height: 100px;
+        line-height: 100px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 568px;
+        top: 25px;
+    }
+
+    .bottommask3 .btnshare1 img {
+        position: absolute;
+        top: 32px;
+        left: 0px;
+        width: 25px;
+    }
+
+    .bottommask3 .btnshare2 img {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 38px;
+    }
+
+    .bottommask3 .btnshare3 img {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 38px;
+    }
+
+    .bottommask3 .btnshare4 img {
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        width: 38px;
+    }
+
+.bottommask4 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+    z-index: 9999;
+    background: #FFFFFF;
+}
+
+    .bottommask4 .btnlinki {
+        width: 135px;
+        height: 100px;
+        line-height: 105px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 35px;
+        top: 25px;
+    }
+
+        .bottommask4 .btnlinki img {
+            position: absolute;
+            top: 32px;
+            left: 0px;
+            width: 38px;
+        }
+
+    .bottommask4 .btncopytext {
+        width: 510px;
+        height: 60px;
+        left: 160px;
+        top: 40px;
+        font-size: 19px;
+    }
+
+    .bottommask4 .btncopeclose {
+        width: 90px;
+        height: 150px;
+        line-height: 40px;
+        right: 0px;
+        top: 0px;
+        font-size: 19px;
+    }
+
+        .bottommask4 .btncopeclose img {
+            width: 30px;
+            right: 30px;
+            top: 63px;
+        }
+
+
+
+
+.bottommask5 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+}
+
+    .bottommask5 .btnwechattext {
+        letter-spacing: 14px;
+        width: 620px;
+        height: 60px;
+        line-height: 60px;
+        left: 40px;
+        top: 45px;
+        font-size: 28px;
+        text-align: center;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+    .bottommask5 .btnwechatclose {
+        width: 90px;
+        height: 150px;
+        line-height: 40px;
+        right: 0px;
+        top: 0px;
+        font-size: 19px;
+    }
+
+        .bottommask5 .btnwechatclose img {
+            width: 30px;
+            right: 30px;
+            top: 63px;
+        }
+
+.resultlabel .resultlabels {
+    width: 100%;
+    height: 260px;
+    top: 50%;
+    left: 50%;
+    margin: -130px 0 0 -375px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+
+
+.resultlabel .textlabel1 {
+    color: #FFFFFF;
+    top: 120px;
+    left: 14%;
+    text-align: left;
+    width: 330px;
+}
+
+.resultlabel .textlabel2 {
+    color: #FFFFFF;
+    top: 120px;
+    right: 14%;
+    text-align: right;
+    width: 250px;
+}
+
+.resultlabel .longbottom {
+    /*transform: scale(1,2); /*缩放属性；两个参数：(水平缩放比例,垂直缩放比例)；1表示原比例*/
+    /*私有缩放属性，为了兼容各浏览器；注：不兼容IE8以下浏览器*/
+    -ms-transform: scale(1,2);
+    -webkit-transform: scale(1,2);
+    -moz-transform: scale(1,2);
+    -o-transform: scale(1,2);
+    transform-origin: bottom;
+}
+
+.resultlabel .longcenter {
+    /*display: inline-block; /*让span变为块状元素，只有块状元素可以缩放*/
+    transform: scale(1,2); /*缩放属性；两个参数：(水平缩放比例,垂直缩放比例)；1表示原比例*/
+    /*私有缩放属性，为了兼容各浏览器；注：不兼容IE8以下浏览器*/
+    -ms-transform: scale(1,2);
+    -webkit-transform: scale(1,2);
+    -moz-transform: scale(1,2);
+    -o-transform: scale(1,2);
+    transform-origin: center;
+}
+
+.resultlabel .loingtop {
+    /*display: inline-block; /*让span变为块状元素，只有块状元素可以缩放*/
+    transform: scale(1,2.3); /*缩放属性；两个参数：(水平缩放比例,垂直缩放比例)；1表示原比例*/
+    /*私有缩放属性，为了兼容各浏览器；注：不兼容IE8以下浏览器*/
+    -ms-transform: scale(1,2.3);
+    -webkit-transform: scale(1,2.3);
+    -moz-transform: scale(1,2.3);
+    -o-transform: scale(1,2.3);
+    transform-origin: center;
+}
+
+.resultlabel .mohu {
+    /*text-shadow: 0 0 10px rgb(255,10,129);*/
+    text-shadow: 0px 0px 5px rgb(221,152,73), 0px 0px 5px rgb(221,152,73), 0px 0px 5px rgb(221,152,73);
+}
+
+.resultlabel .textfanpai1 {
+    /*text-shadow: 0 0 10px rgb(255,10,129);*/
+    transform: scale(1,2.5);
+    -ms-transform: scale(1,2.5);
+    -webkit-transform: scale(1,2.5);
+    -moz-transform: scale(1,2.5);
+    -o-transform: scale(1,2.5);
+    transform-origin: bottom;
+    text-shadow: rgb(255,255,255) 0 0 12px;
+    color: hsla(0,0%,0%,0);
+    top: 130px;
+    opacity: 0.5;
+}
+
+.resultlabel .textfanpai2 {
+    /*text-shadow: 0 0 10px rgb(255,10,129);*/
+    transform: scale(1,3); /*缩放属性；两个参数：(水平缩放比例,垂直缩放比例)；1表示原比例*/
+    /*私有缩放属性，为了兼容各浏览器；注：不兼容IE8以下浏览器*/
+    -ms-transform: scale(1,3);
+    -webkit-transform: scale(1,3);
+    -moz-transform: scale(1,3);
+    -o-transform: scale(1,3);
+    transform-origin: center;
+    text-shadow: rgb(255,255,255) 0 0 12px;
+    color: hsla(0,0%,0%,0);
+    opacity: 0.5;
+}
+
+.resultlabel .textfanpai3 {
+    transform: scale(1,2.5);
+    -ms-transform: scale(1,2.5);
+    -webkit-transform: scale(1,2.5);
+    -moz-transform: scale(1,2.5);
+    -o-transform: scale(1,2.5);
+    transform-origin: top;
+    text-shadow: rgb(255,255,255) 0 0 12px;
+    color: hsla(0,0%,0%,0);
+    top: 110px;
+    opacity: 0.5;
+}
+
+.resultlabel .textfanpai4 {
+    transform: scale(1,2.5);
+    -ms-transform: scale(1,2.5);
+    -webkit-transform: scale(1,2.5);
+    -moz-transform: scale(1,2.5);
+    -o-transform: scale(1,2.5);
+    transform-origin: top;
+    text-shadow: rgb(255,255,255) 0 0 12px;
+    color: hsla(0,0%,0%,0);
+    top: 90px;
+    opacity: 0.5;
+}
+
+.resultlabel .textfanpai5 {
+    /*text-shadow: 0 0 10px rgb(255,10,129);*/
+    transform: scale(1,2.5);
+    -ms-transform: scale(1,2.5);
+    -webkit-transform: scale(1,2.5);
+    -moz-transform: scale(1,2.5);
+    -o-transform: scale(1,2.5);
+    transform-origin: bottom;
+    text-shadow: rgb(255,255,255) 0 0 12px;
+    color: hsla(0,0%,0%,0);
+    top: 160px;
+    opacity: 0.5;
+}
+
+.textshow1 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    font-style: italic;
+    left: 90px;
+    top: 10px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+.textshow2 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    font-style: italic;
+    left: 190px;
+    top: 280px;
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+
+.textshow3 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    font-style: italic;
+    top: 500px;
+    left: 220px;
+    /*transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(-5deg);*/
+}
+
+.textshow4 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    font-style: italic;
+    top: 240px;
+    left: 440px;
+}
+
+.textshow5 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    font-style: italic;
+    top: 400px;
+    left: 330px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+
+.textshow6 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    font-style: italic;
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    top: 570px;
+    left: 300px;
+}
+
+.textshow7 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    top: 490px;
+    left: 300px;
+    font-style: italic;
+    -ms-transform: scale(1, 1) skew(0deg, 20deg);
+    -webkit-transform: scale(1, 1) skew(0deg, 20deg);
+    -moz-transform: scale(1, 1) skew(0deg, 20deg);
+    -o-transform: scale(1, 1) skew(0deg, 20deg);
+}
+
+.textshow8 {
+    opacity: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    position: absolute;
+    top: 320px;
+    left: 235px;
+    font-style: italic;
+    -ms-transform: scale(1, 1) skew(0deg, 20deg);
+    -webkit-transform: scale(1, 1) skew(0deg, 20deg);
+    -moz-transform: scale(1, 1) skew(0deg, 20deg);
+    -o-transform: scale(1, 1) skew(0deg, 20deg);
+}
+
+.textshow1_58 {
+}
+/*.letter-rightdiv {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 20px;
+    left: 150px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}*/
+
+.letter-rightdiv span {
+    position: relative;
+    top: 150px;
+    display: inline-block;
+    font-weight: 900;
+    color: hsla(0, 0%, 0%, 0.6);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -ms-perspective: 550px;
+    perspective: 550px;
+    height: 140px;
+}
+
+.letter-rightdiv span {
+    text-shadow: 1px 4px 6px #000000, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #000000;
+}
+
+    .letter-rightdiv span:before {
+        text-shadow: none;
+        color: hsla(0, 0%, 0%, 0.12);
+    }
+
+    .letter-rightdiv span:before, .letter-rightdiv span:after {
+        position: absolute;
+        content: attr(data-letter);
+        line-height: inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .letter-rightdiv span:before, .letter-rightdiv span:after {
+        /* -webkit-transform-origin: 100% 50%; */
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+
+    .letter-rightdiv span:after {
+        color: rgb(221,221,221);
+    }
+
+    .letter-rightdiv span:after {
+        text-shadow: 1px 0px 0px hsla(360, 100%, 100%, 0.1), -3px 0px 1px hsla(0, 0%, 0%, 0.4);
+        -webkit-transform: rotateY(15deg);
+        -ms-transform: rotateY(15deg);
+        transform: rotateY(15deg);
+    }
+
+    .letter-rightdiv span:after {
+        -webkit-transform: rotateY(35deg);
+        -ms-transform: rotateY(35deg);
+        transform: rotateY(35deg);
+    }
+
+.letter-rightdiv1 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: -135px;
+    left: 120px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv2 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: -131px;
+    left: 325px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv3 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: -131px;
+    left: 530px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv4 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 55px;
+    left: 115px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv5 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 60px;
+    left: 330px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv6 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 55px;
+    left: 550px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv7 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 285px;
+    left: 80px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv8 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 285px;
+    left: 330px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv9 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 282px;
+    left: 590px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv10 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: -135px;
+    left: 120px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv11 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: -131px;
+    left: 325px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv12 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: -131px;
+    left: 530px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+    .letter-rightdiv1 span.letter-righttop, .letter-rightdiv2 span.letter-righttop, .letter-rightdiv3 span.letter-righttop, .letter-rightdiv4 span.letter-righttop, .letter-rightdiv5 span.letter-righttop, .letter-rightdiv6 span.letter-righttop, .letter-rightdiv7 span.letter-righttop, .letter-rightdiv8 span.letter-righttop, .letter-rightdiv9 span.letter-righttop, .letter-rightdiv10 span.letter-righttop, .letter-rightdiv11 span.letter-righttop, .letter-rightdiv12 span.letter-righttop {
+        top: 0px;
+        -webkit-transition: top 100ms;
+        -moz-transition: top 100ms;
+        -ms-transition: top 100ms;
+        -o-transition: top 100ms;
+        transition: top 100ms;
+    }
+
+
+    .letter-rightdiv1 span.letter-rightbottom, .letter-rightdiv2 span.letter-rightbottom, .letter-rightdiv3 span.letter-rightbottom, .letter-rightdiv4 span.letter-rightbottom, .letter-rightdiv5 span.letter-rightbottom, .letter-rightdiv6 span.letter-rightbottom, .letter-rightdiv7 span.letter-rightbottom, .letter-rightdiv8 span.letter-rightbottom, .letter-rightdiv9 span.letter-rightbottom, .letter-rightdiv10 span.letter-rightbottom, .letter-rightdiv11 span.letter-rightbottom, .letter-rightdiv12 span.letter-rightbottom {
+        top: 150px;
+        -webkit-transition: top 100ms;
+        -moz-transition: top 100ms;
+        -ms-transition: top 100ms;
+        -o-transition: top 100ms;
+        transition: top 100ms;
+    }
+
+.letter-rightdiv .letterleftdd {
+    width: 94px;
+    height: 135px;
+    position: absolute;
+}
+
+.letter-rightdiv .letterrightdd {
+    width: 94px;
+    height: 135px;
+    position: absolute;
+    display: none;
+}
+
+.letter-rightdiv .letterleftdivsmall {
+    width: 50px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-rightdiv .letterrightdivsmall {
+    width: 50px;
+    overflow: hidden;
+    position: absolute;
+    left: 60px;
+    display: block;
+    transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+    .letter-rightdiv .letterrightdivsmall span {
+        left: -60px;
+    }
+
+
+canvas {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+#container {
+    position: absolute;
+    width: 750px;
+    height: 512px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+.containertextscan {
+    -ms-transform: scale(8, 8);
+    -webkit-transform: scale(8, 8);
+    -moz-transform: scale(8, 8);
+    -o-transform: scale(8, 8);
+    opacity: 1;
+}
+
+.containertextscanhide {
+    opacity: 0;
+    -ms-transform: scale(4, 12);
+    -webkit-transform: scale(4, 12);
+    -moz-transform: scale(4, 12);
+    -o-transform: scale(4, 12);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.fontscale {
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+
+
+
+
+
+
+.bottommask6 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+}
+
+    .bottommask6 .btnfresult1 {
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        letter-spacing: 8px;
+        background: #FFFFFF;
+        bottom: 0px;
+        font-size: 40px;
+        cursor: pointer;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+        .bottommask6 .btnfresult1 img {
+            position: absolute;
+            top: 30px;
+            left: 0px;
+        }
+
+
+
+
+
+
+.btnshare102 {
+    width: 115px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 120px;
+    top: 25px;
+    font-size: 28px;
+}
+
+.btnshare103 {
+    width: 120px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 320px;
+    top: 25px;
+    font-size: 28px;
+}
+
+.btnshare104 {
+    width: 115px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    letter-spacing: 4px;
+    left: 518px;
+    top: 25px;
+    font-size: 28px;
+}
+
+.btnshare102 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 38px;
+}
+
+.btnshare103 img {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 38px;
+}
+
+.btnshare104 img {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 38px;
+}
+
+
+
+
+
+.bottommask100 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+    display: none;
+    background: #FFFFFF;
+}
+
+.bottommask200 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+    display: none;
+    background: #FFFFFF;
+}
+
+    .bottommask200 .btnlinki200 {
+        width: 115px;
+        height: 100px;
+        line-height: 105px;
+        text-align: right;
+        letter-spacing: 4px;
+        left: 35px;
+        top: 25px;
+    }
+
+        .bottommask200 .btnlinki200 img {
+            position: absolute;
+            top: 32px;
+            left: 0px;
+            width: 38px;
+        }
+
+    .bottommask200 .btncopytext200 {
+        width: 510px;
+        height: 50px;
+        left: 160px;
+        top: 50px;
+        font-size: 19px;
+    }
+
+    .bottommask200 .btncopeclose200 {
+        width: 90px;
+        height: 150px;
+        line-height: 40px;
+        right: 0px;
+        top: 0px;
+        font-size: 19px;
+    }
+
+        .bottommask200 .btncopeclose200 img {
+            width: 30px;
+            right: 30px;
+            top: 63px;
+        }
+
+.inputcopylabel200 {
+    top: 70px;
+    width: 90%;
+    text-align: center;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+    letter-spacing: 14px;
+}
+
+.inputcopytext200 {
+    height: 60px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+
+.bottommask300 {
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    font-size: 28px;
+    background: #FFFFFF;
+}
+
+    .bottommask300 .btnwechattext300 {
+        width: 620px;
+        height: 60px;
+        line-height: 60px;
+        left: 40px;
+        top: 45px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .bottommask300 .btnwechatclose300 {
+        width: 90px;
+        height: 150px;
+        line-height: 40px;
+        right: 0px;
+        top: 0px;
+        font-size: 19px;
+    }
+
+        .bottommask300 .btnwechatclose300 img {
+            width: 30px;
+            right: 30px;
+            top: 63px;
+        }
+
+
+.textshow4_71 {
+    top: 210px;
+    left: 480px;
+    transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow4_81 {
+    top: 115px;
+    left: 490px;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow4_91 {
+    top: -50px;
+    left: 450px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow4_101 {
+    top: -130px;
+    left: 400px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow4_111 {
+    top: 20px;
+    left: 415px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow4_121 {
+    top: 150px;
+    left: 405px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+
+.textshow1_71 {
+    left: 70px;
+    top: 120px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow1_81 {
+    left: 65px;
+    top: 170px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow1_91 {
+    left: 5px;
+    top: 170px;
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow1_101 {
+    left: 5px;
+    top: 200px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow1_111 {
+    left: 5px;
+    top: 210px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow1_121 {
+    left: 5px;
+    top: 100px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+
+
+
+
+.textshow2_71 {
+    left: 190px;
+    top: 360px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow2_81 {
+    left: 140px;
+    top: 400px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow2_91 {
+    left: 90px;
+    top: 380px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow2_101 {
+    left: 60px;
+    top: 350px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow2_111 {
+    left: 80px;
+    top: 340px;
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow2_121 {
+    left: 80px;
+    top: 290px;
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+
+
+.textshow3_71 {
+    top: 600px;
+    left: 220px;
+    /*transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(-5deg);*/
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow3_81 {
+    top: 630px;
+    left: 150px;
+    /*transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);*/
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow3_91 {
+    top: 600px;
+    left: 90px;
+    /*transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);*/
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow3_101 {
+    top: 550px;
+    left: 50px;
+    /*transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-15deg);*/
+    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow3_111 {
+    top: 450px;
+    left: 80px;
+    /*transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-15deg);*/
+    transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow3_121 {
+    top: 430px;
+    left: 80px;
+    /*transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-15deg);*/
+    transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+
+.textshow5_71 {
+    top: 380px;
+    left: 350px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow5_81 {
+    top: 240px;
+    left: 400px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow5_91 {
+    top: 130px;
+    left: 380px;
+    transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow5_101 {
+    top: 190px;
+    left: 360px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow5_111 {
+    top: 300px;
+    left: 360px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow5_121 {
+    top: 350px;
+    left: 240px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+
+
+
+.textshow6_71 {
+    top: 520px;
+    left: 380px;
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow6_81 {
+    top: 370px;
+    left: 380px;
+    transform: rotate(-0deg);
+    -ms-transform: rotate(-0deg);
+    -moz-transform: rotate(-0deg);
+    -webkit-transform: rotate(-0deg);
+    -o-transform: rotate(-0deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow6_91 {
+    top: 310px;
+    left: 420px;
+    transform: rotate(-0deg);
+    -ms-transform: rotate(-0deg);
+    -moz-transform: rotate(-0deg);
+    -webkit-transform: rotate(-0deg);
+    -o-transform: rotate(-0deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow6_101 {
+    top: 400px;
+    left: 420px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow6_111 {
+    top: 565px;
+    left: 365px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.textshow6_121 {
+    top: 700px;
+    left: 240px;
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-10deg);
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.btnreplay {
+    z-index: 999;
+    bottom: 210px;
+    left: 50px;
+    width: 200px;
+    height: 50px;
+    display: none;
+}
+
+    .btnreplay img {
+        width: 40px;
+        top: 2px;
+    }
+
+.replaytext {
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 50px;
+    left: 40px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.pagealert {
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+    .pagealert .pagealertd {
+        width: 600px;
+        height: 450px;
+        top: 50%;
+        left: 50%;
+        margin: -225px 0 0 -300px;
+        background: rgb(244,244,244);
+    }
+
+    .pagealert .pagealerttext {
+        width: 90%;
+        height: 300px;
+        left: 5%;
+        font-size: 40px;
+        text-align: center;
+        line-height: 300px;
+        letter-spacing: 4px;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+    .pagealert .pagecha {
+        width: 50%;
+        height: 150px;
+        bottom: 0px;
+        left: 0px;
+        border-top: 2px solid rgb(228,228,228);
+        border-right: 1px solid rgb(228,228,228);
+    }
+
+    .pagealert .pagegou {
+        width: 50%;
+        height: 150px;
+        bottom: 0px;
+        right: 0px;
+        border-top: 2px solid rgb(228,228,228);
+        border-left: 1px solid rgb(228,228,228);
+    }
+
+    .pagealert .pagecha img {
+        top: 55px;
+        left: 129px;
+    }
+
+    .pagealert .pagegou img {
+        top: 56px;
+        left: 122px;
+    }
+
+
+
+
+
+
+.pagealertother {
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+    .pagealertother .pagealertd {
+        width: 600px;
+        height: 450px;
+        top: 50%;
+        left: 50%;
+        margin: -225px 0 0 -300px;
+        background: rgb(244,244,244);
+    }
+
+    .pagealertother .pagealerttext {
+        width: 90%;
+        height: 300px;
+        left: 5%;
+        font-size: 40px;
+        text-align: center;
+        line-height: 300px;
+        letter-spacing: 4px;
+        transform: scale(0.8,1);
+        -ms-transform: scale(0.8,1);
+        -webkit-transform: scale(0.8,1);
+        -moz-transform: scale(0.8,1);
+        -o-transform: scale(0.8,1);
+    }
+
+    .pagealertother .pagegou {
+        width: 100%;
+        height: 150px;
+        bottom: 0px;
+        border-top: 2px solid rgb(228,228,228);
+    }
+
+    .pagealertother .pagecha img {
+        top: 55px;
+        left: 129px;
+    }
+
+    .pagealertother .pagegou img {
+        top: 56px;
+        left: 271px;
+    }
+
+
+
+
+
+.pageloadingd {
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    margin: -60px 0 0 -375px;
+}
+
+.pageLoading .tn {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+    top: 70px;
+}
+
+.pageLoading .text {
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    letter-spacing: 10px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 40px;
+    transform: scale(0.8,1);
+    -ms-transform: scale(0.8,1);
+    -webkit-transform: scale(0.8,1);
+    -moz-transform: scale(0.8,1);
+    -o-transform: scale(0.8,1);
+}
+
+.loadingbar {
+    width: 0;
+    bottom: 0px;
+    z-index: 99999;
+    height: 10px;
+    overflow: hidden;
+}
+
+    .loadingbar im {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+#container12 {
+    transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+}
+
+.letter-rightdiv01 span {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    font-weight: 900;
+    /*color: hsla(0, 0%, 0%, 0.6);*/
+    color: #FFFFFF;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -ms-perspective: 550px;
+    perspective: 550px;
+    height: 140px;
+}
+
+.letter-rightdiv01 .letterrightdd span {
+    top: -66px;
+}
+
+.letter-rightdiv01 span {
+    text-shadow: 1px 4px 6px #000000, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #000000;
+}
+
+    .letter-rightdiv01 span:before {
+        text-shadow: none;
+        color: hsla(0, 0%, 0%, 0.12);
+    }
+
+    .letter-rightdiv01 span:before, .letter-rightdiv01 span:after {
+        position: absolute;
+        content: attr(data-letter);
+        line-height: inherit;
+        top: 0;
+        left: -20px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .letter-rightdiv01 span:before, .letter-rightdiv01 span:after {
+        /* -webkit-transform-origin: 100% 50%; */
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+
+    .letter-rightdiv01 span:after {
+        color: rgb(221,221,221);
+    }
+
+    .letter-rightdiv01 span:after {
+        text-shadow: 1px 0px 0px hsla(360, 100%, 100%, 0.1), -3px 0px 1px hsla(0, 0%, 0%, 0.4);
+        -webkit-transform: rotateY(15deg);
+        -ms-transform: rotateY(15deg);
+        transform: rotateY(15deg);
+    }
+
+    .letter-rightdiv01 span:after {
+        -webkit-transform: rotateY(35deg);
+        -ms-transform: rotateY(35deg);
+        transform: rotateY(35deg);
+    }
+
+.letter-rightdiv01 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv02 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 120px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv03 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 220px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv04 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 320px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv05 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 420px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv06 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 520px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv07 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 120px;
+    left: 0px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv08 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 120px;
+    left: 120px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv09 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 120px;
+    left: 220px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv010 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 120px;
+    left: 320px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv011 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 120px;
+    left: 420px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv012 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 120px;
+    left: 520px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv01 .letterleftdd {
+    width: 94px;
+    height: 130px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.letter-rightdiv01 .letterrightdd {
+    width: 94px;
+    height: 60px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 66px;
+    display: block;
+}
+
+.letter-rightdiv01 .letterleftdivsmall {
+    width: 50px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.letter-rightdiv01 .letterrightdivsmall {
+    width: 50px;
+    overflow: hidden;
+    position: absolute;
+    left: 60px;
+    display: block;
+    transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+    .letter-rightdiv01 .letterrightdivsmall span {
+        left: -60px;
+    }
+
+#container12.letterrightdiv01moved {
+    top: 600px;
+    left: 75px;
+    z-index: 999;
+    width: 650px;
+    height: 300px;
+}
+
+#container12.letterrightdiv01move {
+    left: -700px;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.afterpageLoading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    height: 100%;
+    width: 100%;
+    background: #d4d4d4;
+}
+
+.letterline1 {
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 0px;
+    position: absolute;
+}
+
+
+.letterline2 {
+    top: 60px;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+}
+
+.animation31 {
+    top: 500px;
+    opacity: 1;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.textshowopacity {
+    opacity: 1;
+    -webkit-transition: all 301ms ease-in-out;
+    -moz-transition: all 301ms ease-in-out;
+    -ms-transition: all 301ms ease-in-out;
+    -o-transition: all 301ms ease-in-out;
+    transition: all 301ms ease-in-out;
+}
+
+.letterlines6 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 25px;
+    position: absolute;
+    left: 194px;
+    transform: translateZ(0) rotate(99deg);
+    -ms-transform: translateZ(0) rotate(99deg);
+    -moz-transform: translateZ(0) rotate(99deg);
+    -webkit-transform: translateZ(0) rotate(99deg);
+    -o-transform: translateZ(0) rotate(99deg);
+}
+
+
+.letterlines5 {
+    top: 0px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 250px;
+     transform: translateZ(0) rotate(99deg);
+    -ms-transform: translateZ(0) rotate(99deg);
+    -moz-transform: translateZ(0) rotate(99deg);
+    -webkit-transform: translateZ(0) rotate(99deg);
+    -o-transform: translateZ(0) rotate(99deg);
+}
+
+.letterlines4 {
+    top: -10px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 300px;
+     transform: translateZ(0) rotate(99deg);
+    -ms-transform: translateZ(0) rotate(99deg);
+    -moz-transform: translateZ(0) rotate(99deg);
+    -webkit-transform: translateZ(0) rotate(99deg);
+    -o-transform: translateZ(0) rotate(99deg);
+}
+
+.letterlines3 {
+    top: -10px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 350px;
+     transform: translateZ(0) rotate(99deg);
+    -ms-transform: translateZ(0) rotate(99deg);
+    -moz-transform: translateZ(0) rotate(99deg);
+    -webkit-transform: translateZ(0) rotate(99deg);
+    -o-transform: translateZ(0) rotate(99deg);
+}
+
+.letterlines2 {
+    top: 0px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 400px;
+     transform: translateZ(0) rotate(99deg);
+    -ms-transform: translateZ(0) rotate(99deg);
+    -moz-transform: translateZ(0) rotate(99deg);
+    -webkit-transform: translateZ(0) rotate(99deg);
+    -o-transform: translateZ(0) rotate(99deg);
+}
+
+.letterlines1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 20px;
+    position: absolute;
+    left: 450px;
+        transform: translateZ(0) rotate(99deg);
+    -ms-transform: translateZ(0) rotate(99deg);
+    -moz-transform: translateZ(0) rotate(99deg);
+    -webkit-transform: translateZ(0) rotate(99deg);
+    -o-transform: translateZ(0) rotate(99deg);
+}
+
+.letterlines12 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 105px;
+    position: absolute;
+    left: 200px;
+       transform: translateZ(0) rotate(79deg);
+    -ms-transform: translateZ(0) rotate(79deg);
+    -moz-transform: translateZ(0) rotate(79deg);
+    -webkit-transform: translateZ(0) rotate(79deg);
+    -o-transform: translateZ(0) rotate(79deg);
+}
+
+.letterlines11{
+    top: 120px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 250px;
+       transform: translateZ(0) rotate(79deg);
+    -ms-transform: translateZ(0) rotate(79deg);
+    -moz-transform: translateZ(0) rotate(79deg);
+    -webkit-transform: translateZ(0) rotate(79deg);
+    -o-transform: translateZ(0) rotate(79deg);
+}
+
+.letterlines10 {
+    top: 125px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 300px;
+       transform: translateZ(0) rotate(79deg);
+    -ms-transform: translateZ(0) rotate(79deg);
+    -moz-transform: translateZ(0) rotate(79deg);
+    -webkit-transform: translateZ(0) rotate(79deg);
+    -o-transform: translateZ(0) rotate(79deg);
+}
+
+.letterlines9 {
+    top: 125px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 350px;
+       transform: translateZ(0) rotate(79deg);
+    -ms-transform: translateZ(0) rotate(79deg);
+    -moz-transform: translateZ(0) rotate(79deg);
+    -webkit-transform: translateZ(0) rotate(79deg);
+    -o-transform: translateZ(0) rotate(79deg);
+}
+
+.letterlines8 {
+    top: 120px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 400px;
+       transform: translateZ(0) rotate(79deg);
+    -ms-transform: translateZ(0) rotate(79deg);
+    -moz-transform: translateZ(0) rotate(79deg);
+    -webkit-transform: translateZ(0) rotate(79deg);
+    -o-transform: translateZ(0) rotate(79deg);
+}
+
+.letterlines7 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 99px;
+    left: 450px;
+    position: absolute;
+        transform: translateZ(0) rotate(79deg);
+    -ms-transform: translateZ(0) rotate(79deg);
+    -moz-transform: translateZ(0) rotate(79deg);
+    -webkit-transform: translateZ(0) rotate(79deg);
+    -o-transform: translateZ(0) rotate(79deg);
+}
+
+
+.letterline131 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 0px;
+    position: absolute;
+    transform: translateZ(0) rotateX(-24deg) rotateY(28deg);
+    -ms-transform: translateZ(0) rotateX(-24deg) rotateY(28deg);
+    -moz-transform: translateZ(0) rotateX(-24deg) rotateY(28deg);
+    -webkit-transform: translateZ(0) rotateX(-24deg) rotateY(28deg);
+    -o-transform: translateZ(0) rotateX(-24deg) rotateY(28deg);
+    letter-spacing: 4px;
+}
+
+
+.letterline132 {
+    top: 60px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -ms-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -moz-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -webkit-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -o-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    letter-spacing: 4px;
+}
+
+#container13 {
+    left: -400px;
+    transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -ms-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -moz-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -webkit-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+    -o-transform: translateZ(0) rotateX(-24deg) rotateY(30deg);
+}
+
+    #container13.animation131_11 {
+        top: 910px;
+        left: -450px;
+    }
+
+    #container13.animation131_12 {
+        top: 910px;
+        left: -350px;
+    }
+
+    #container13.animation131_13 {
+        top: 910px;
+        left: -220px;
+    }
+
+    #container13.animation131_14 {
+        top: 910px;
+        left: -80px;
+    }
+
+    #container13.animation131_15 {
+        top: 910px;
+        left: 150px;
+    }
+
+    #container13.animation131_16 {
+        top: 910px;
+        left: 170px;
+    }
+
+
+#container22 {
+    top: 1200px;
+}
+
+
+    #container22.animation221_6 {
+        top: 717px;
+    left: 15px;
+    transform: translateZ(0) rotate(-90deg) scale(1.4);
+    -ms-transform: translateZ(0) rotate(-90deg) scale(1.4);
+    -moz-transform: translateZ(0) rotate(-90deg) scale(1.4);
+    -webkit-transform: translateZ(0) rotate(-90deg) scale(1.4);
+    -o-transform:translateZ(0) rotate(-90deg) scale(1.4);
+    }
+    
+    #container22.animation221_7 {
+         opacity:0;
+    }
+
+    #container22.animation221_8 {
+       top: 502px;
+    left: 5px;
+    transform: translateZ(0) rotate(-87deg) scale(1.1);
+    -ms-transform:translateZ(0) rotate(-87deg) scale(1.1);
+    -moz-transform: translateZ(0) rotate(-87deg) scale(1.1);
+    -webkit-transform: translateZ(0) rotate(-87deg) scale(1.1);
+    -o-transform: translateZ(0) rotate(-87deg) scale(1.1);
+    }
+
+    #container22.animation221_9 {
+        top: 458px;
+    left: 2px;
+    transform: translateZ(0) rotate(-86deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-86deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-86deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-86deg) scale(1);
+    -o-transform: translateZ(0) rotate(-86deg) scale(1);
+    }
+
+    #container22.animation221_10 {
+         top: 471px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+
+    #container22.animation221_11 {
+         top: 495px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+
+    #container22.animation221_12 {
+        top: 508px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+
+    #container22.animation221_13 {
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+
+    #container22.animation221_14 {
+       top: 496px;
+    left: 2px;
+    transform: translateZ(0) rotate(-90deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-90deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-90deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-90deg) scale(1);
+    -o-transform: translateZ(0) rotate(-90deg) scale(1);
+    }
+
+
+    #container22.animation221_15 {
+       top: 489px;
+    left: 2px;
+    transform: translateZ(0) rotate(-89deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-89deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-89deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-89deg) scale(1);
+    -o-transform: translateZ(0) rotate(-89deg) scale(1);
+    }
+
+    #container22.animation221_67 {
+         top: 491px;
+    left: 2px;
+    transform: translateZ(0) rotate(-89deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-89deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-89deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-89deg) scale(1);
+    -o-transform: translateZ(0) rotate(-89deg) scale(1);
+    }
+
+    #container22.animation221_68 {
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+    
+    #container22.animation221_69 {
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+    
+    #container22.animation221_70 {
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+    
+    #container22.animation221_71{
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+    
+    #container22.animation221_72 {
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+    
+    #container22.animation221_73 {
+         top: 504px;
+    left: 2px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+    
+    #container22.animation221_74 {
+      top: 504px;
+    left: 23px;
+    transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+    }
+
+    #container22.animation221opacity {
+        opacity: 0;
+           top: 478px;
+       left: 110px;
+        transform: translateZ(0) rotate(-88deg) scale(1);
+    -ms-transform: translateZ(0) rotate(-88deg) scale(1);
+    -moz-transform: translateZ(0) rotate(-88deg) scale(1);
+    -webkit-transform: translateZ(0) rotate(-88deg) scale(1);
+    -o-transform: translateZ(0) rotate(-88deg) scale(1);
+        -webkit-transition: all 501ms ease-in-out;
+        -moz-transition: all 501ms ease-in-out;
+        -ms-transition: all 501ms ease-in-out;
+        -o-transition: all 501ms ease-in-out;
+        transition: all 501ms ease-in-out;
+    }
+
+#container23 {
+    height: 0px;
+}
+
+    #container23.containerheight231 {
+        height: 900px;
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -ms-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+    }
+
+.letter-rightdiv231 span {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    font-weight: 900;
+    color: hsla(0, 0%, 0%, 0.6);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -ms-perspective: 550px;
+    perspective: 550px;
+    height: 140px;
+}
+
+.letter-rightdiv231 span {
+    text-shadow: 1px 4px 6px #000000, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #000000;
+}
+
+    .letter-rightdiv231 span:before {
+        text-shadow: none;
+        color: hsla(0, 0%, 0%, 0.12);
+    }
+
+    .letter-rightdiv231 span:before, .letter-rightdiv231 span:after {
+        position: absolute;
+        content: attr(data-letter);
+        line-height: inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .letter-rightdiv231 span:before, .letter-rightdiv231 span:after {
+        /* -webkit-transform-origin: 100% 50%; */
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+
+    .letter-rightdiv231 span:after {
+        color: rgb(221,221,221);
+    }
+
+    .letter-rightdiv231 span:after {
+        text-shadow: 1px 0px 0px hsla(360, 100%, 100%, 0.1), -3px 0px 1px hsla(0, 0%, 0%, 0.4);
+        -webkit-transform: rotateY(15deg);
+        -ms-transform: rotateY(15deg);
+        transform: rotateY(15deg);
+    }
+
+    .letter-rightdiv231 span:after {
+        -webkit-transform: rotateY(35deg);
+        -ms-transform: rotateY(35deg);
+        transform: rotateY(35deg);
+    }
+
+.letter-rightdiv231_1 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    left: 300px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_2 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 80px;
+    left: 290px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_3 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 165px;
+    left: 315px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_4 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 255px;
+    left: 290px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_5 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 350px;
+    left: 310px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_6 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 450px;
+    left: 280px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_7 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 540px;
+    left: 300px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_8 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 620px;
+    left: 280px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_9 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 710px;
+    left: 335px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_10 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 710px;
+    left: 260px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_11 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 800px;
+    left: 240px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv231_12 {
+    font-size: 90px;
+    width: 92px;
+    height: 135px;
+    top: 800px;
+    left: 340px;
+    text-align: center;
+    position: absolute;
+}
+
+/*.letter-rightdiv231_1 span.letter-righttop, .letter-rightdiv231_2 span.letter-righttop, .letter-rightdiv231_3 span.letter-righttop, .letter-rightdiv231_4 span.letter-righttop, .letter-rightdiv231_5 span.letter-righttop, .letter-rightdiv231_6 span.letter-righttop, .letter-rightdiv231_7 span.letter-righttop, .letter-rightdiv231_8 span.letter-righttop, .letter-rightdiv231_9 span.letter-righttop, .letter-rightdiv231_10 span.letter-righttop, .letter-rightdiv231_11 span.letter-righttop, .letter-rightdiv231_12 span.letter-righttop {
+        top: 0px;
+        -webkit-transition: top 100ms;
+        -moz-transition: top 100ms;
+        -ms-transition: top 100ms;
+        -o-transition: top 100ms;
+        transition: top 100ms;
+    }
+
+
+    .letter-rightdiv1 span.letter-rightbottom, .letter-rightdiv2 span.letter-rightbottom, .letter-rightdiv3 span.letter-rightbottom, .letter-rightdiv4 span.letter-rightbottom, .letter-rightdiv5 span.letter-rightbottom, .letter-rightdiv6 span.letter-rightbottom, .letter-rightdiv7 span.letter-rightbottom, .letter-rightdiv8 span.letter-rightbottom, .letter-rightdiv9 span.letter-rightbottom, .letter-rightdiv10 span.letter-rightbottom, .letter-rightdiv11 span.letter-rightbottom, .letter-rightdiv12 span.letter-rightbottom {
+        top: 150px;
+        -webkit-transition: top 100ms;
+        -moz-transition: top 100ms;
+        -ms-transition: top 100ms;
+        -o-transition: top 100ms;
+        transition: top 100ms;
+    }*/
+
+.letter-rightdiv231 .letterleftdd {
+    width: 54px;
+    overflow: hidden;
+    height: 135px;
+    position: absolute;
+}
+
+.letter-rightdiv231 .letterrightdd {
+    width: 40px;
+    overflow: hidden;
+    left: 54px;
+    height: 135px;
+    position: absolute;
+}
+
+    .letter-rightdiv231 .letterrightdd span {
+        left: -54px;
+    }
+
+
+.letter-rightdiv231_1 .letterleftdd.letterleftddroute {
+    left: -250px;
+    top: 30px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.letter-rightdiv231_1 .letterrightdd.letterrightddroute {
+    left: 250px;
+    top: 30px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.letter-rightdiv231_2 .letterleftdd.letterleftddroute {
+    left: -260px;
+    top: 40px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+.letter-rightdiv231_2 .letterrightdd.letterrightddroute {
+    left: 360px;
+    top: 40px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+
+.letter-rightdiv231_3 .letterleftdd.letterleftddroute {
+    left: -270px;
+    top: 50px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.letter-rightdiv231_3 .letterrightdd.letterrightddroute {
+    left: 370px;
+    top: 50px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+
+.letter-rightdiv231_4 .letterleftdd.letterleftddroute {
+    left: -280px;
+    top: 60px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.letter-rightdiv231_4 .letterrightdd.letterrightddroute {
+    left: 380px;
+    top: 60px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+
+.letter-rightdiv231_5 .letterleftdd.letterleftddroute {
+    left: -290px;
+    top: 70px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.letter-rightdiv231_5 .letterrightdd.letterrightddroute {
+    left: 390px;
+    top: 70px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+
+.letter-rightdiv231_6 .letterleftdd.letterleftddroute {
+    left: -300px;
+    top: 80px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.letter-rightdiv231_6 .letterrightdd.letterrightddroute {
+    left: 400px;
+    top: 80px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+
+
+
+
+.letter-rightdiv231_7 .letterleftdd.letterleftddroute {
+    left: -250px;
+    top: 30px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.letter-rightdiv231_7 .letterrightdd.letterrightddroute {
+    left: 350px;
+    top: 30px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 901ms ease-in-out;
+    -moz-transition: all 901ms ease-in-out;
+    -ms-transition: all 901ms ease-in-out;
+    -o-transition: all 901ms ease-in-out;
+    transition: all 901ms ease-in-out;
+}
+
+.letter-rightdiv231_8 .letterleftdd.letterleftddroute {
+    left: -260px;
+    top: 40px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.letter-rightdiv231_8 .letterrightdd.letterrightddroute {
+    left: 360px;
+    top: 40px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+
+.letter-rightdiv231_9 .letterleftdd.letterleftddroute {
+    left: -270px;
+    top: 50px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 701ms ease-in-out;
+    -moz-transition: all 701ms ease-in-out;
+    -ms-transition: all 701ms ease-in-out;
+    -o-transition: all 701ms ease-in-out;
+    transition: all 701ms ease-in-out;
+}
+
+.letter-rightdiv231_9 .letterrightdd.letterrightddroute {
+    left: 370px;
+    top: 50px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 701ms ease-in-out;
+    -moz-transition: all 701ms ease-in-out;
+    -ms-transition: all 701ms ease-in-out;
+    -o-transition: all 701ms ease-in-out;
+    transition: all 701ms ease-in-out;
+}
+
+
+.letter-rightdiv231_10 .letterleftdd.letterleftddroute {
+    left: -280px;
+    top: 60px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.letter-rightdiv231_10 .letterrightdd.letterrightddroute {
+    left: 380px;
+    top: 60px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+
+.letter-rightdiv231_11 .letterleftdd.letterleftddroute {
+    left: -290px;
+    top: 70px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+.letter-rightdiv231_11 .letterrightdd.letterrightddroute {
+    left: 390px;
+    top: 70px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+
+.letter-rightdiv231_12 .letterleftdd.letterleftddroute {
+    left: -300px;
+    top: 80px;
+    transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+.letter-rightdiv231_12 .letterrightdd.letterrightddroute {
+    left: 400px;
+    top: 80px;
+    transform: rotate(65deg);
+    -ms-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    opacity: 0;
+    -webkit-transition: all 801ms ease-in-out;
+    -moz-transition: all 801ms ease-in-out;
+    -ms-transition: all 801ms ease-in-out;
+    -o-transition: all 801ms ease-in-out;
+    transition: all 801ms ease-in-out;
+}
+
+.container14_56 {
+    opacity: 0.1;
+    top: 200px;
+    left: -420px;
+}
+
+.container14_57 {
+    opacity: 0.1;
+    top: 200px;
+    left: -380px;
+}
+
+.container14_58 {
+    top: 200px;
+    left: -250px;
+    opacity: 0.3;
+}
+
+.container14_59 {
+    top: 260px;
+    left: -150px;
+    opacity: 0.5;
+}
+
+.container14_60 {
+    top: 320px;
+    left: -60px;
+    opacity: 0.8;
+}
+
+.container14_61 {
+    top: 374px;
+    left: 17px;
+}
+
+.container14_62 {
+    top: 404px;
+    left: 27px;
+}
+
+.container14_63 {
+    top: 424px;
+    left: 37px;
+}
+
+.container14_64 {
+    top: 464px;
+    left: 57px;
+}
+
+.container14_65 {
+    top: 524px;
+    left: 67px;
+}
+
+.container14_66 {
+    top: 544px;
+    left: 87px;
+}
+
+.container14_67 {
+    top: 544px;
+    left: 87px;
+}
+
+.container14_68 {
+    top: 554px;
+    left: 87px;
+}
+
+.container14_69 {
+    top: 556px;
+    left: 87px;
+}
+
+.container14_70 {
+    top: 559px;
+    left: 87px;
+}
+
+.container14_71 {
+    top: 562px;
+    left: 87px;
+}
+
+.container14_72 {
+    top: 569px;
+    left: 87px;
+}
+
+.container14_73 {
+    top: 579px;
+    left: 87px;
+}
+
+.container14_74 {
+    top: 592px;
+    left: 87px;
+}
+
+.container14_75 {
+    top: 599px;
+    left: 87px;
+}
+
+.container14_76 {
+    top: 594px;
+    left: 87px;
+}
+
+.container14_77 {
+    top: 589px;
+    left: 87px;
+}
+
+.container14_78 {
+    top: 586px;
+    left: 72px;
+}
+
+.container14_79 {
+    top: 589px;
+    left: 67px;
+}
+
+.container14_80 {
+    top: 594px;
+    left: 57px;
+}
+
+.container14_81 {
+    top: 599px;
+    left: 62px;
+}
+
+.container14_82 {
+    top: 599px;
+    left: 57px;
+}
+
+.container14_83 {
+    top: 599px;
+    left: 47px;
+}
+
+.container14_84 {
+    top: 594px;
+    left: 42px;
+}
+
+.container14_85 {
+    top: 589px;
+    left: 37px;
+}
+
+.container14_86 {
+    top: 584px;
+    left: 32px;
+}
+
+.container14_87 {
+    top: 589px;
+    left: 27px;
+}
+
+.container14_88 {
+    top: 594px;
+    left: 27px;
+}
+
+.container14_89 {
+    top: 592px;
+    left: 17px;
+}
+
+.container14_90 {
+    top: 599px;
+    left: 17px;
+}
+
+.container14_91 {
+    top: 594px;
+    left: 17px;
+}
+
+.container14_92 {
+    top: 589px;
+    left: 7px;
+}
+
+.container14_93 {
+    top: 589px;
+    left: 8px;
+}
+
+.container14_94 {
+    top: 594px;
+    left: 8px;
+}
+
+.container14_95 {
+    top: 602px;
+    left: 8px;
+}
+
+.container14_96 {
+    top: 609px;
+    left: 8px;
+}
+
+.container14_97 {
+    top: 604px;
+    left: 8px;
+}
+
+.container14_98 {
+    top: 599px;
+    left: 13px;
+}
+
+.container14_99 {
+    top: 594px;
+    left: 8px;
+}
+
+.container14_100 {
+    top: 589px;
+    left: 8px;
+}
+
+.container14_101 {
+    top: 589px;
+    left: 8px;
+}
+
+.container14_102 {
+    top: 594px;
+    left: 8px;
+}
+
+.container14_103 {
+    top: 599px;
+    left: 8px;
+}
+
+.container14_104 {
+    top: 604px;
+    left: 8px;
+}
+
+.container14_105 {
+    top: 609px;
+    left: 8px;
+}
+
+.container14_106 {
+    top: 604px;
+    left: 3px;
+}
+
+.container14_107 {
+    top: 599px;
+    left: 8px;
+}
+
+.container14_108 {
+    top: 594px;
+    left: 8px;
+}
+
+.container14_109 {
+    /*top: 599px;
+    left: 8px;*/
+    left: 400px;
+    top: 700px;
+    opacity: 0;
+    -webkit-transition: all 101ms ease-in-out;
+    -moz-transition: all 101ms ease-in-out;
+    -ms-transition: all 101ms ease-in-out;
+    -o-transition: all 101ms ease-in-out;
+    transition: all 101ms ease-in-out;
+}
+
+.container14_110 {
+    top: 604px;
+    left: 8px;
+}
+
+.container14_111 {
+    top: 609px;
+    left: 3px;
+}
+
+.container14_112 {
+    top: 609px;
+    left: 3px;
+}
+
+.container14_113 {
+    top: 604px;
+    left: 8px;
+}
+
+.container14_114 {
+    left: 400px;
+    top: 700px;
+    opacity: 0;
+    -webkit-transition: all 101ms ease-in-out;
+    -moz-transition: all 101ms ease-in-out;
+    -ms-transition: all 101ms ease-in-out;
+    -o-transition: all 101ms ease-in-out;
+    transition: all 101ms ease-in-out;
+}
+
+.container14_115 {
+    top: 599px;
+    left: 8px;
+}
+
+.container14_116 {
+    left: 400px;
+    top: 700px;
+    opacity: 0;
+    -webkit-transition: all 301ms ease-in-out;
+    -moz-transition: all 301ms ease-in-out;
+    -ms-transition: all 301ms ease-in-out;
+    -o-transition: all 301ms ease-in-out;
+    transition: all 301ms ease-in-out;
+}
+
+.letterline141 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    top: 0px;
+    position: absolute;
+}
+
+
+.letterline142 {
+    top: 60px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'TradeGothicW01-BoldCn20_675334','MStiffHeiPRCBold',"黑体";
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+}
+
+
+
+.letter-rightdiv131 span {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    font-weight: 900;
+    color: hsla(0, 0%, 0%, 0.6);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -ms-perspective: 550px;
+    perspective: 550px;
+    height: 140px;
+}
+
+.letter-rightdiv131 span {
+    text-shadow: 1px 4px 6px #000000, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #000000;
+}
+
+    .letter-rightdiv131 span:before {
+        text-shadow: none;
+        color: hsla(0, 0%, 0%, 0.12);
+    }
+
+    .letter-rightdiv131 span:before, .letter-rightdiv131 span:after {
+        position: absolute;
+        content: attr(data-letter);
+        line-height: inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .letter-rightdiv131 span:before, .letter-rightdiv131 span:after {
+        /* -webkit-transform-origin: 100% 50%; */
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+
+    .letter-rightdiv131 span:after {
+        color: rgb(221,221,221);
+    }
+
+    .letter-rightdiv131 span:after {
+        text-shadow: 1px 0px 0px hsla(360, 100%, 100%, 0.1), -3px 0px 1px hsla(0, 0%, 0%, 0.4);
+        -webkit-transform: rotateY(15deg);
+        -ms-transform: rotateY(15deg);
+        transform: rotateY(15deg);
+    }
+
+    .letter-rightdiv131 span:after {
+        -webkit-transform: rotateY(35deg);
+        -ms-transform: rotateY(35deg);
+        transform: rotateY(35deg);
+    }
+
+.letter-rightdiv131_1 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    left: 80px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+}
+
+.letter-rightdiv131_2 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 0px;
+    left: 150px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_3 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 4px;
+    left: 220px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_4 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 6px;
+    left: 290px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_5 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 6px;
+    left: 360px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_6 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 6px;
+    left: 430px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_7 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 100px;
+    left: 80px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_8 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 100px;
+    left: 150px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_9 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 100px;
+    left: 220px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_10 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 100px;
+    left: 290px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_11 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 100px;
+    left: 360px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131_12 {
+    font-size: 70px;
+    width: 92px;
+    height: 135px;
+    top: 100px;
+    left: 430px;
+    text-align: center;
+    position: absolute;
+}
+
+.letter-rightdiv131 .letterleftdd {
+    width: 40px;
+    overflow: hidden;
+    height: 135px;
+    position: absolute;
+}
+
+.letter-rightdiv131 .letterrightdd {
+    width: 52px;
+    overflow: hidden;
+    left: 40px;
+    height: 135px;
+    position: absolute;
+}
+
+    .letter-rightdiv131 .letterrightdd span {
+        left: -40px;
+    }
+
+
+.letter131leftddroute {
+    left: -100px;
+    top: -400px;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    opacity: 0;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.letter131rightddroute {
+    left: 250px;
+    top: 300px;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    opacity: 0;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+
+.animation151_9 {
+    font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 432px;
+    top: 27px;
+    position: absolute;
+    opacity: 0.3;
+    transform: perspective(600px) rotate(-45deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-45deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-45deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-45deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-45deg) scale(1,1.8);
+}
+
+.animation151_10 {
+    font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 432px;
+    top: 172px;
+    position: absolute;
+    opacity: 0.3;
+    transform: perspective(600px) rotate(-35deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-35deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-35deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-35deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-35deg) scale(1,1.8);
+}
+
+.animation151_11 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 419px;
+    top: 312px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+}
+
+.animation151_12 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 419px;
+    top: 326px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-32deg) scale(1,1.8);
+}
+
+.animation151_13 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 412px;
+    top: 342px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+}
+
+.animation151_14 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 412px;
+    top: 356px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+}
+
+.animation151_15 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 405px;
+    top: 374px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-29deg) scale(1,1.8);
+}
+
+.animation151_16 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 405px;
+    top: 386px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+}
+
+.animation151_17 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 405px;
+    top: 402px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_18 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 402px;
+    top: 422px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+}
+
+.animation151_19 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 402px;
+    top: 440px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-27deg) scale(1,1.8);
+}
+
+.animation151_20 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 397px;
+    top: 454px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_21 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 397px;
+    top: 461px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_22 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 395px;
+    top: 469px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_23 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 395px;
+    top: 474px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_24 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 395px;
+    top: 480px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_25 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 386px;
+    top: 484px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_26 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 384px;
+    top: 488px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_27 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 381px;
+    top: 501px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_28 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 381px;
+    top: 514px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-25deg) scale(1,1.8);
+}
+
+.animation151_29 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 376px;
+    top: 525px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-23deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-23deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-23deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-23deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-23deg) scale(1,1.8);
+}
+
+.animation151_30 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 376px;
+    top: 538px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-22deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-22deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-22deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-22deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-22deg) scale(1,1.8);
+}
+
+.animation151_31 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 372px;
+    top: 549px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-21deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-21deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-21deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-21deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-21deg) scale(1,1.8);
+}
+
+.animation151_32 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 369px;
+    top: 561px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+}
+
+.animation151_33 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 369px;
+    top: 570px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+}
+
+.animation151_34 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 369px;
+    top: 570px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+}
+
+.animation151_35 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 365px;
+    top: 570px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+}
+
+.animation151_36 {
+    font-size: 45px;
+    width: 280px;
+    text-align: right;
+    left: 365px;
+    top: 570px;
+    position: absolute;
+    opacity: 1;
+    letter-spacing: 8px;
+    transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-20deg) scale(1,1.8);
+}
+
+.animation151_37 {
+    opacity: 0;
+}
+
+
+
+.animation151_69 {
+    font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 176px;
+    top: 80px;
+    position: absolute;
+    opacity: 0.3;
+    transform: perspective(600px) rotate(-91deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-91deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-91deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-91deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-91deg) scale(1,1.8);
+}
+
+.animation151_70 {
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 196px;
+    top: 255px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-82deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-82deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-82deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-82deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-82deg) scale(1,1);
+}
+
+.animation151_71 {
+     font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 200px;
+    top: 266px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-79deg) scale(1,1);
+}
+
+.animation151_72 {
+     font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 200px;
+    top: 282px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-79deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-79deg) scale(1,1);
+}
+
+.animation151_73 {
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 201px;
+    top: 290px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_74 {
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+        left: 204px;
+    top: 303px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_75 {
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 203px;
+    top: 323px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_76 {
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+          left: 204px;
+    top: 337px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_77 {
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 206px;
+    top: 352px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_78{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 206px;
+    top: 369px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_79{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 206px;
+    top: 387px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_80{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 206px;
+    top: 403px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_81{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+        left: 204px;
+    top: 421px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-76deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-76deg) scale(1,1);
+}
+
+.animation151_82{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 204px;
+    top: 436px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-72deg) scale(1,1);
+}
+
+.animation151_83{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+        left: 202px;
+    top: 455px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-72deg) scale(1,1);
+}
+
+.animation151_84{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+      left: 202px;
+    top: 472px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-72deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-72deg) scale(1,1);
+}
+
+.animation151_85{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+          left: 202px;
+    top: 482px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-70deg) scale(1,1);
+}
+
+.animation151_86{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+        left: 198px;
+    top: 501px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-70deg) scale(1,1);
+}
+
+.animation151_87{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;
+      left: 199px;
+    top: 508px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-70deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-70deg) scale(1,1);
+}
+
+.animation151_88{
+         font-size: 45px;
+    width: 280px;
+    text-align: center;    left: 198px;
+    top: 513px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-68deg) scale(1,1);
+}
+
+.animation151_89{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+        left: 198px;
+    top: 524px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-68deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-68deg) scale(1,1);
+}
+
+.animation151_90{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+      left: 194px;
+    top: 533px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-67deg) scale(1,1);
+}
+
+.animation151_91{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+          left: 193px;
+    top: 542px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-67deg) scale(1,1);
+}
+
+.animation151_92{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+          left: 188px;
+    top: 560px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-67deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-67deg) scale(1,1);
+}
+
+.animation151_93{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+              left: 188px;
+    top: 574px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-64deg) scale(1,1);
+}
+
+.animation151_94{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+             left: 184px;
+    top: 592px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-64deg) scale(1,1);
+}
+
+.animation151_95{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+            left: 184px;
+    top: 604px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-64deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-64deg) scale(1,1);
+}
+
+.animation151_96{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+            left: 180px;
+    top: 622px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-62deg) scale(1,1);
+}
+
+.animation151_97{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+           left: 178px;
+    top: 630px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-62deg) scale(1,1);
+}
+
+.animation151_98{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+             left: 174px;
+    top: 636px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-62deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-62deg) scale(1,1);
+}
+
+.animation151_99{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+          left: 171px;
+    top: 642px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-60deg) scale(1,1);
+}
+
+.animation151_100{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+        left: 169px;
+    top: 649px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-60deg) scale(1,1);
+}
+
+.animation151_101{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+          left: 169px;
+    top: 656px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-60deg) scale(1,1);
+}
+
+.animation151_102{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+              left: 164px;
+    top: 663px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-60deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-60deg) scale(1,1);
+}
+
+.animation151_103{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                 left: 158px;
+    top: 679px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_104{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                 left: 158px;
+    top: 691px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_105{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                  left: 153px;
+    top: 709px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_106{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 151px;
+    top: 722px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_107{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 150px;
+    top: 731px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_108{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                 left: 147px;
+    top: 737px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_109{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                 left: 147px;
+    top: 737px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-58deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-58deg) scale(1,1);
+}
+
+.animation151_110{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 147px;
+    top: 742px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_111{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 147px;
+    top: 742px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_112{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 147px;
+    top: 742px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+
+.animation151_113{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 147px;
+    top: 742px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_114{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+              left: 141px;
+    top: 754px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_115{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 141px;
+    top: 762px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+.animation151_116{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 141px;
+    top: 766px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_117{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+                left: 141px;
+    top: 769px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_118{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 141px;
+    top: 771px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_119{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 141px;
+    top: 771px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_120{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 141px;
+    top: 771px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_121{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 141px;
+    top: 764px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_122{
+         font-size: 45px;
+    width: 280px;
+    text-align: center; 
+               left: 141px;
+    top: 764px;
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -ms-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -moz-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -webkit-transform: perspective(600px) rotate(-56deg) scale(1,1);
+    -o-transform: perspective(600px) rotate(-56deg) scale(1,1);
+}
+
+.animation151_123{
+         opacity:0;
+}
+
+
+
+.animation151_154{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+    left: 121px;
+    top: 80px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 0.3;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_155{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+        left: 145px;
+    top: 289px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_156{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+          left: 145px;
+    top: 296px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_157{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 148px;
+    top: 299px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_158{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+          left: 148px;
+    top: 301px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_159{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 148px;
+    top: 303px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_160{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                 left: 148px;
+    top: 307px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_161{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 153px;
+    top: 312px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_162{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 153px;
+    top: 312px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_163{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 153px;
+    top: 312px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-43deg) scale(1,1.8);
+}
+
+.animation151_164{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+          left: 160px;
+    top: 318px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_165{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 160px;
+    top: 323px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_166{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 167px;
+    top: 329px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_167{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                left: 171px;
+    top: 333px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_168{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                   left: 173px;
+    top: 340px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_169{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                   left: 177px;
+    top: 346px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_170{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                     left: 180px;
+    top: 353px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_171{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                  left: 185px;
+    top: 358px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_172{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+                left: 188px;
+    top: 369px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_173{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 191px;
+    top: 380px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_174{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 191px;
+    top: 380px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_175{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 191px;
+    top: 382px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_176{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 387px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_177{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 387px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_178{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 387px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_179{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 387px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_180{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 388px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-39deg) scale(1,1.8);
+}
+
+.animation151_181{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 389px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_182{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 395px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_183{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+    top: 399px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_184{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 193px;
+   top: 405px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_185{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 197px;
+    top: 414px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_186{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+              left: 197px;
+    top: 421px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_187{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 430px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_188{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 441px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_189{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 446px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_190{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 451px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_191{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 451px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+
+.animation151_192{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 451px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_193{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 451px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_194{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 451px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_195{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+               left: 197px;
+    top: 454px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_196{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 454px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_197{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 454px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-37deg) scale(1,1.8);
+}
+
+.animation151_198{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 455px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_200{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 460px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_201{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 464px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_202{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 468px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_203{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 473px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_204{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 483px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_205{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 489px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_206{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 495px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_207{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 495px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_208{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 495px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_209{
+        font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 497px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_210{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 499px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_211{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+             left: 196px;
+    top: 499px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_212{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 203px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_213{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 203px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_214{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+           left: 203px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_215{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+            left: 203px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_216{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+         left: 203px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_217{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+         left: 206px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_218{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+         left: 206px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+.animation151_219{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+         left: 206px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-33deg) scale(1,1.8);
+}
+
+
+.animation151_220{
+       font-size: 45px;
+    width: 280px;
+    text-align: center;
+        left: 211px;
+    top: 486px;
+    color: rgb(151,99,64);
+    position: absolute;
+    opacity: 1;
+    transform: perspective(600px) rotate(-31deg) scale(1,1.8);
+    -ms-transform: perspective(600px) rotate(-31deg) scale(1,1.8);
+    -moz-transform: perspective(600px) rotate(-31deg) scale(1,1.8);
+    -webkit-transform: perspective(600px) rotate(-31deg) scale(1,1.8);
+    -o-transform: perspective(600px) rotate(-31deg) scale(1,1.8);
+}
+
+.animation151_221{
+      opacity:0;
+}

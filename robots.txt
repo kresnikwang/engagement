@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /keywords.txt
+Disallow: /category
+Disallow: /img
+Disallow: /fonts

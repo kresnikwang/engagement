@@ -1,0 +1,25 @@
+{
+  "name": "olympics-rio-engagement-ui",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp-clean": "^0.3.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-cache-bust": "^1.0.2",
+    "gulp-copy": "0.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jack.lee@bitbucket.akqa.net/scm/shanike/olympics-rio-engagement-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "olympics-rio-engagement-ui"
+}
